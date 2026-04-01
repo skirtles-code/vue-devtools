@@ -45,6 +45,7 @@ export function getGraphFunctions(ctx: RpcFunctionCtx) {
         return {
           id: i.id,
           deps: searchForVueDeps(i.id),
+          virtual: i.virtual,
         }
       })
       return graph
